@@ -38,7 +38,7 @@ conda config --set auto_activate_base false
 conda deactivate
 ```
 ## Install Mamba
-```
+```sh
 conda install mamba -c conda-forge
 ```
 ## Create the mamba environment, and set up the channels.
