@@ -64,4 +64,37 @@ For the full desktop version, with more packages pre-installed (recommended if y
 ```sh
 mamba install ros-humble-desktop-full
 ```
-
+# Step 4: Verify Installation
+After installing ROS Humble through mamba, verify the installation by running some basic commands.
+## ROS CLI Commands
+```sh
+ros2 node list
+```
+```sh
+ros2 topic list
+```
+```sh
+ros2 pkg list
+```
+## ROS GUI Test
+```sh
+ros2 run rqt_gui rqt_gui
+```
+```sh
+ros2 run rviz2 rviz2
+```
+## ROS Communication
+Open two terminals, and run the following commands.
+### Both Terminals
+```sh
+mamba activate ros_humble
+```
+### Terminal 1: Publisher / Talker
+```sh
+ros2 run demo_nodes_cpp talker
+```
+### Terminal 2: Subscriber / Listener
+```sh
+ros2 run demo_nodes_cpp listener
+```
+You should see the `talker` sending messages, and the `listener` receiving them.
