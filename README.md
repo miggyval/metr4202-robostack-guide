@@ -52,15 +52,15 @@ conda config --env --remove channels defaults
 conda config --env --add channels robostack-humble
 ```
 # Step 3: Install ROS Humble
-For the minimal installation, run:
+For the minimal installation (for CLI/Headless use):
 ```sh
 mamba install ros-humble-ros-base
 ```
-For the desktop version (recommended if you are low on disk space)
+For the desktop version (recommended if you have limited disk space)
 ```sh
 mamba install ros-humble-desktop
 ```
-For the full desktop version, with more packages pre-installed (recommended if you have lots of disk space)
+For the full desktop version, with more packages pre-installed (recommended if you have ample disk space)
 ```sh
 mamba install ros-humble-desktop-full
 ```
