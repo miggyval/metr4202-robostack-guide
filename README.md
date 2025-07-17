@@ -14,15 +14,17 @@ Open your Terminal.
 
 # Step 1: Installing Conda (Miniconda)
 Open your Terminal.
+## Installing `wget`
 Ensure that `wget` is installed on your system.
-## Apple / MacOS
+### Apple / MacOS
 ```zsh
 brew install wget
 ```
-## Ubuntu
+### Ubuntu
 ```bash
 sudo apt install wget
 ```
+## Installing Miniconda from Miniforge
 Now, install miniconda from miniforge with the following command.
 ```sh
 wget "https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-$(uname)-$(uname -m).sh"
