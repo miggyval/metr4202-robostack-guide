@@ -56,6 +56,7 @@ conda deactivate
 ```sh
 conda install mamba -c conda-forge
 ```
+Press `ENTER` to install `mamba` via `conda`.
 ## Create the mamba environment, and set up the channels.
 Note that this is for ROS Humble Hawksbill.
 ```sh
