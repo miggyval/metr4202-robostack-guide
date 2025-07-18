@@ -83,6 +83,18 @@ mamba install ros-humble-desktop-full
 Press `ENTER` to confirm changes and install ROS2 Humble Hawksbill and relevant packages.
 # Step 4: Verify Installation
 After installing ROS Humble through mamba, verify the installation by running some basic commands.
+
+Make sure that your terminal has the `ros_humble` environment activated.
+
+If it doesn't show on the side like:
+```sh
+(ros_humble) user@my-pc:~$
+```
+Then run the following to activate.
+```sh
+mamba activate ros_humble
+```
+**Note: You will need to run this every time you open a new terminal**
 ## ROS CLI Commands
 ```sh
 ros2 node list
@@ -91,18 +103,12 @@ ros2 node list
 ros2 topic list
 ```
 ```sh
-ros2 pkg list(ros_humble) valencimm@miguel-minisforum:~$ ros2 run demo_nodes_cpp listener
-[INFO] [1752823777.564503365] [listener]: I heard: [Hello World: 3]
-[INFO] [1752823778.564386061] [listener]: I heard: [Hello World: 4]
-[INFO] [1752823779.564671590] [listener]: I heard: [Hello World: 5]
-[INFO] [1752823780.564887598] [listener]: I heard: [Hello World: 6]
-[INFO] [1752823781.564737702] [listener]: I heard: [Hello World: 7]
-[INFO] [1752823782.565200646] [listener]: I heard: [Hello World: 8]
+ros2 pkg list
 
 ```
 ## ROS GUI Test
 ```sh
-ros2 run rqt_gui rqt_guialias humble="mamba deactivate; mamba activate ros_humble"
+ros2 run rqt_gui rqt_gui
 
 ```
 ```sh
@@ -124,7 +130,7 @@ ros2 run demo_nodes_cpp listener
 ```
 You should see the `talker` sending messages, and the `listener` receiving them.
 ```sh
-(ros_humble) user@ubuntu-desktop:~$ ros2 run demo_nodes_cpp listener
+(ros_humble) user@my-pc:~$ ros2 run demo_nodes_cpp listener
 [INFO] [1752823777.564503365] [listener]: I heard: [Hello World: 3]
 [INFO] [1752823778.564386061] [listener]: I heard: [Hello World: 4]
 [INFO] [1752823779.564671590] [listener]: I heard: [Hello World: 5]
@@ -161,3 +167,4 @@ Copy and paste this into your aliases file, and restart your terminal to allow y
 ```sh
 alias humble="mamba deactivate; mamba activate ros_humble"
 ```
+Now, when you type `humble` into your terminal, it will automatically activate the environment for ROS Humble.
