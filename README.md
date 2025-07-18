@@ -102,7 +102,8 @@ ros2 pkg list(ros_humble) valencimm@miguel-minisforum:~$ ros2 run demo_nodes_cpp
 ```
 ## ROS GUI Test
 ```sh
-ros2 run rqt_gui rqt_gui
+ros2 run rqt_gui rqt_guialias humble="mamba deactivate; mamba activate ros_humble"
+
 ```
 ```sh
 ros2 run rviz2 rviz2
@@ -156,6 +157,7 @@ vim ~/.zsh_aliases
 nano ~/.zsh_aliases
 ```
 ## Aliases File
-```
+Copy and paste this into your aliases file, and restart your terminal to allow your changes to take effect.
+```sh
 alias humble="mamba deactivate; mamba activate ros_humble"
 ```
