@@ -80,6 +80,7 @@ For the full desktop version, with more packages pre-installed (recommended if y
 ```sh
 mamba install ros-humble-desktop-full
 ```
+Press `ENTER` to confirm changes and install ROS2 Humble Hawksbill and relevant packages.
 # Step 4: Verify Installation
 After installing ROS Humble through mamba, verify the installation by running some basic commands.
 ## ROS CLI Commands
