@@ -115,3 +115,36 @@ ros2 run demo_nodes_cpp talker
 ros2 run demo_nodes_cpp listener
 ```
 You should see the `talker` sending messages, and the `listener` receiving them.
+```sh
+(ros_humble) user@ubuntu-desktop:~$ ros2 run demo_nodes_cpp listener
+[INFO] [1752823777.564503365] [listener]: I heard: [Hello World: 3]
+[INFO] [1752823778.564386061] [listener]: I heard: [Hello World: 4]
+[INFO] [1752823779.564671590] [listener]: I heard: [Hello World: 5]
+[INFO] [1752823780.564887598] [listener]: I heard: [Hello World: 6]
+[INFO] [1752823781.564737702] [listener]: I heard: [Hello World: 7]
+[INFO] [1752823782.565200646] [listener]: I heard: [Hello World: 8]
+```
+# Step 5: Shortcuts / Aliases
+It's very useful to add aliases / shortcuts when developing to save time when typing.
+
+Here are a few common aliases that you might find useful.
+
+Create / edit a file in your home directory called `~/.bash_aliases` (`~/.zsh_aliases` for MacOS).
+## Ubuntu (bash)
+### Using `vim`
+```sh
+vim ~/.bash_aliases
+```
+### Using `nano`
+```sh
+nano ~/.bash_aliases
+```
+## MacOS (zsh)
+### Using `vim`
+```sh
+vim ~/.zsh_aliases
+```
+### Using `nano`
+```sh
+nano ~/.zsh_aliases
+```
