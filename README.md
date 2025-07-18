@@ -43,7 +43,7 @@ Follow the prompts to install conda on your system:
 - Press `ENTER`
 - Type `yes`
 
-After this, you should have successfully installed conda
+After this, you should have successfully installed conda.
 
 Close and reopen your terminal.
 # Step 2: Setting up the Mamba Environment
