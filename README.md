@@ -91,7 +91,14 @@ ros2 node list
 ros2 topic list
 ```
 ```sh
-ros2 pkg list
+ros2 pkg list(ros_humble) valencimm@miguel-minisforum:~$ ros2 run demo_nodes_cpp listener
+[INFO] [1752823777.564503365] [listener]: I heard: [Hello World: 3]
+[INFO] [1752823778.564386061] [listener]: I heard: [Hello World: 4]
+[INFO] [1752823779.564671590] [listener]: I heard: [Hello World: 5]
+[INFO] [1752823780.564887598] [listener]: I heard: [Hello World: 6]
+[INFO] [1752823781.564737702] [listener]: I heard: [Hello World: 7]
+[INFO] [1752823782.565200646] [listener]: I heard: [Hello World: 8]
+
 ```
 ## ROS GUI Test
 ```sh
@@ -147,4 +154,8 @@ vim ~/.zsh_aliases
 ### Using `nano`
 ```sh
 nano ~/.zsh_aliases
+```
+## Aliases File
+```
+alias humble="mamba deactivate; mamba activate ros_humble"
 ```
