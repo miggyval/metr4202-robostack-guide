@@ -25,11 +25,23 @@ brew install wget
 sudo apt install wget
 ```
 ## Installing Miniconda from Miniforge
-Now, install miniconda from miniforge with the following command.
+Download the Miniconda install script with the following command.
 ```sh
 wget "https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-$(uname)-$(uname -m).sh"
 ```
-Follow the prompts to install conda on your system.
+Now, install miniconda from miniforge by running the script
+### Ubuntu (with bash)
+```bash
+bash Miniforge3-$(uname)-$(uname -m).sh
+```
+### MacOS (with zsh)
+```zsh
+zsh Miniforge3-$(uname)-$(uname -m).sh
+```
+Follow the prompts to install conda on your system:
+- Type `yes`
+- Press `ENTER`
+- Type `yes`
 Close and reopen your terminal.
 # Step 2: Setting up the Mamba Environment
 ## Disable Auto-Activate base:
