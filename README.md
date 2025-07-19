@@ -143,7 +143,19 @@ Run the following command to install all necessary build tools for development i
 ```sh
 mamba install compilers cmake pkg-config make ninja colcon-common-extensions catkin_tools rosdep
 ```
-# Step 6: Shortcuts / Aliases
+
+# Step 6: Downgrade `setup-tools`
+```sh
+pip install setuptools==58.0.4
+```
+# Step 7: Install Gazebo through Miniforge
+```sh
+mamba install -c conda-forge gazebo
+```
+```sh
+mamba install ros-humble-gazebo-ros-pkgs
+```
+# Step 8: Shortcuts / Aliases
 It's very useful to add aliases / shortcuts when developing to save time when typing.
 
 Here are a few common aliases that you might find useful.
