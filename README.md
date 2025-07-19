@@ -138,7 +138,12 @@ You should see the `talker` sending messages, and the `listener` receiving them.
 [INFO] [1752823781.564737702] [listener]: I heard: [Hello World: 7]
 [INFO] [1752823782.565200646] [listener]: I heard: [Hello World: 8]
 ```
-# Step 5: Shortcuts / Aliases
+# Step 5: Development / Build Tools
+Run the following command to install all necessary build tools for development in ROS.
+```sh
+mamba install compilers cmake pkg-config make ninja colcon-common-extensions catkin_tools rosdep
+```
+# Step 6: Shortcuts / Aliases
 It's very useful to add aliases / shortcuts when developing to save time when typing.
 
 Here are a few common aliases that you might find useful.
@@ -166,5 +171,9 @@ nano ~/.zsh_aliases
 Copy and paste this into your aliases file, and restart your terminal to allow your changes to take effect.
 ```sh
 alias humble="mamba deactivate; mamba activate ros_humble"
+# For zsh (comment line if needed)
+alias sws="source ./install/setup.zsh"
+# For bash (uncomment line if needed)
+alias sws="source ./install/setup.bash"
 ```
 Now, when you type `humble` into your terminal, it will automatically activate the environment for ROS Humble.
