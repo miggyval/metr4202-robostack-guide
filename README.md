@@ -146,7 +146,7 @@ mamba install compilers cmake pkg-config make ninja colcon-common-extensions cat
 
 # Step 6: Downgrade `setup-tools`
 ```sh
-pip install setuptools==58.0.4
+mamba install setuptools=58.0.4
 ```
 # Step 7: Install Gazebo through Miniforge
 ```sh
