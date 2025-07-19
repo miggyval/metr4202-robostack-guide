@@ -60,7 +60,7 @@ Press `ENTER` to install `mamba` via `conda`.
 ## Create the mamba environment, and set up the channels.
 Note that this is for ROS Humble Hawksbill.
 ```sh
-mamba create -n ros_humble
+mamba create -n ros_humble python=3.9
 mamba activate ros_humble
 
 conda config --env --add channels conda-forge
