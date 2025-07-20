@@ -62,7 +62,9 @@ Note that this is for ROS Humble Hawksbill.
 ```sh
 mamba create -n ros_humble python=3.11
 mamba activate ros_humble
-
+```
+Setting up the channels
+```sh
 conda config --env --add channels conda-forge
 conda config --env --remove channels defaults
 conda config --env --add channels robostack-humble
